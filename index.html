@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <title>
+          Feedback
+        </title>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQP1QAW2AINyS5EnlzFL29INzjoqIDQjo",
+    authDomain: "logup-e60f6.firebaseapp.com",
+    databaseURL: "https://logup-e60f6.firebaseio.com",
+    projectId: "logup-e60f6",
+    storageBucket: "logup-e60f6.appspot.com",
+    messagingSenderId: "468490925287",
+    appId: "1:468490925287:web:6b0be769ea2fccae839e42"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    </head>
+
+
+    <body>
+        <center>
+            <h1 id="heading">
+                Please Provide Your Feedback for online Maths Classes
+            </h1>
+        </center>
+        <br>
+        <h1 id="txt">
+        <input type="text" id="name" placeholder="Name" maxlength="30">
+       </h1>
+        <br>
+        <hr>
+        <h2 id="sub">
+            Please Give your feedback based on the following Parameters out of 10-
+        </h2>
+        <br>
+        <hr>
+        <h3 id="teaching-head"> 
+            <u>
+            Teaching-
+            </u>
+        </h3>
+        <hr width="50%">
+        <div class="teaching-container">
+        <fieldset id="explain">
+            <legend>
+                Explanation
+            </legend>
+            <div class="explanation-container">
+                <button id="teach-one" onclick="teachOne()">
+                 <img src="onecropped.png">
+                </button>
+
+                <button id="teach-two" onclick="teachTwo()">
+                    <img src="twocropped.png">
+                   </button>
+
+                   <button id="teach-three" onclick="teachThree()">
+                    <img src="threecropped.png">
+                   </button>
+
+                   <button id="teach-four" onclick="teachFour()">
+                    <img src="fourcropped.png">
+                   </button>
+                   <button id="teach-five" onclick="teachFive()">
+                    <img src="fivecropped.png">
+                   </button>
+                   <button id="teach-six" onclick="teachSix()">
+                    <img src="sixcropped.png">
+                   </button>
+                   <button id="teach-seven" onclick="teachSeven()">
+                    <img src="sevencropped.png">
+                   </button>
+                   <button id="teach-eight" onclick="teachEight()">
+                    <img src="eightfinalfinal.png">
+                   </button>
+                   <button id="teach-nine" onclick="teachNine()">
+                    <img src="ninefinalfinal.png">
+                   </button>
+                   <button id="teach-ten" onclick="teachTen()">
+                    <img src="tenfinalfinal.png">
+                    </button>
+                    <p id="teaching-display">
+                        <b>
+
+                        </b>
+                    </p>
+                    </div>
+    
+        <div class="doubt-container">           
+        </fieldset>
+        <br>
+        <fieldset id="doubt">
+            <legend>
+                Solving Of Doubts
+            </legend>
+            <button id="doubt-one" onclick="doubtOne()">
+                <img src="onecropped.png">
+               </button>
+
+               <button id="doubt-two" onclick="doubtTwo()">
+                   <img src="twocropped.png">
+                  </button>
+
+                  <button id="doubt-three" onclick="doubtThree()">
+                   <img src="threecropped.png">
+                  </button>
+
+                  <button id="doubt-four" onclick="doubtFour()">
+                   <img src="fourcropped.png">
+                  </button>
+                  <button id="doubt-five" onclick="doubtFive()">
+                   <img src="fivecropped.png">
+                  </button>
+                  <button id="doubt-six" onclick="doubtSix()">
+                   <img src="sixcropped.png">
+                  </button>
+                  <button id="doubt-seven" onclick="doubtSeven()">
+                   <img src="sevencropped.png">
+                  </button>
+                  <button id="doubt-eight" onclick="doubtEight()">
+                   <img src="eightfinalfinal.png">
+                  </button>
+                  <button id="doubt-nine" onclick="doubtNine()">
+                   <img src="ninefinalfinal.png">
+                  </button>
+                  <button id="doubt-ten" onclick="doubtTen()">
+                   <img src="tenfinalfinal.png">
+                   </button>
+                   <p id="doubting-display">
+                       <b>
+
+                       </b>
+                   </p>
+        </fieldset>
+        </div>
+        <div class="concept-container">
+
+            <fieldset id="concept">
+                <legend>
+                   Concept Clarity
+                </legend>
+                <button id="concept-one" onclick="conceptOne()">
+                    <img src="onecropped.png">
+                   </button>
+    
+                   <button id="concept-two" onclick="conceptTwo()">
+                       <img src="twocropped.png">
+                      </button>
+    
+                      <button id="concept-three" onclick="conceptThree()">
+                       <img src="threecropped.png">
+                      </button>
+    
+                      <button id="concept-four" onclick="conceptFour()">
+                       <img src="fourcropped.png">
+                      </button>
+                      <button id="concept-five" onclick="conceptFive()">
+                       <img src="fivecropped.png">
+                      </button>
+                      <button id="concept-six" onclick="conceptSix()">
+                       <img src="sixcropped.png">
+                      </button>
+                      <button id="concept-seven" onclick="conceptSeven()">
+                       <img src="sevencropped.png">
+                      </button>
+                      <button id="concept-eight" onclick="conceptEight()">
+                       <img src="eightfinalfinal.png">
+                      </button>
+                      <button id="concept-nine" onclick="conceptNine()">
+                       <img src="ninefinalfinal.png">
+                      </button>
+                      <button id="concept-ten" onclick="conceptTen()">
+                       <img src="tenfinalfinal.png">
+                       </button>
+                       <p id="concepting-display">
+                           <b>
+    
+                           </b>
+                       </p>
+            </fieldset>
+
+        </div>
+    </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <h3 id="connectivity-head">
+            <u>
+        Connectivity-
+        </u>
+        </h3>
+        <hr width="50%">
+        <div class="network-container">
+            <div class="smoothness-container">
+            <fieldset id="smoothness">
+                <legend>
+                  Video Smoothness
+                </legend>
+            <button id="net-one" onclick="netOne()">
+                <img src="onecropped.png">
+               </button>
+
+               <button id="net-two" onclick="netTwo()">
+                   <img src="twocropped.png">
+                  </button>
+
+                  <button id="net-three" onclick="netThree()">
+                   <img src="threecropped.png">
+                  </button>
+
+                  <button id="net-four" onclick="netFour()">
+                   <img src="fourcropped.png">
+                  </button>
+                  <button id="net-five" onclick="netFive()">
+                   <img src="fivecropped.png">
+                  </button>
+                  <button id="net-six" onclick="netSix()">
+                   <img src="sixcropped.png">
+                  </button>
+                  <button id="net-seven" onclick="netSeven()">
+                   <img src="sevencropped.png">
+                  </button>
+                  <button id="net-eight" onclick="netEight()">
+                   <img src="eightfinalfinal.png">
+                  </button>
+                  <button id="net-nine" onclick="netNine()">
+                   <img src="ninefinalfinal.png">
+                  </button>
+                  <button id="net-ten" onclick="netTen()">
+                   <img src="tenfinalfinal.png">
+                   </button>
+                   <p id="neting-display">
+                       <b>
+                           
+                       </b>
+                   </p>
+                   </fieldset>
+                   </div>
+        </div>
+        <br>
+        <hr>
+        <div class="suggestion-container">
+            <fieldset id="sugg">
+                <legend>
+                    Any Suggestions
+                </legend>
+                <input type="text" id="suggestions">
+            </fieldset>
+        </div>
+        </div>
+        <br>
+        <h1 id="btn-head">
+        <button id="btn">
+        Submit
+    </button>
+    </h1>
+        <script src="script.js">
+
+        </script>
+
+
+
+    </body>
+</html>
